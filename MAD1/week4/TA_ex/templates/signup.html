@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <title>Sigup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="center"><h1>ABC Employee Salary Application</h1></div>
+    <form class="input_form" action="/register" method="POST">
+        <div><h1>Sign Up</h1></div>
+        <br>
+        <label >First name : </label>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <label >Last name : </label>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <label >Gender : </label>
+        <input type="radio" id="m" name="gender" value="M">Male
+        <input type="radio" id="f" name="gender" value="F">Female
+        <input type="radio" id="o" name="gender" value="O">Other
+        <br>
+        <label >Email or User id : </label>
+        <input type="email" id="uname" name="uname">
+        <br>
+        <label >password : </label>
+        <input type="text" id="pwd" name="pwd">
+        <br>
+        <input type="submit" value="registered">
+        <input type="button" value="exit">
+        <br>
+    </form>
+    </div>
+</body>
+</html>

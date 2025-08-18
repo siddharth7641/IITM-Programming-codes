@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="name">Name:</label> <input autocomplete="on" type="text" name="name" id="name">
+        <label for="city">City:</label> <input autocomplete="on" type="text" name="city" id="city">
+        <label for="playground">Playground:</label> <input autocomplete="on" type="text" name="playground" id="playground">
+        <button type="submit">Submit</button>
+    </form>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        {% for team in teams %}
+        <tr>
+            <td>{{team.team_id}}</td>
+            <td>{{team.name}}</td>
+            <td>{{team.city}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript eg</title>
+</head>
+<body>
+    <p><button onclick="changeColor()">Change Background Color</button></p>
+    
+    <div id="demo">Original Text</div>
+    <p><button onclick="changeText()">Change Text</button></p>
+
+    <div id="message">Hello, I am visible!</div>
+    <br>
+    <button onclick="toggleVisibility()">Show/Hide</button>
+    <h1>Asynchronous Data Load</h1>
+    <button onclick="loadData()">Load Data</button>
+    <div id="dataContainer"></div>
+
+    
+        
+    <script>
+        function changeText() {
+        const element = document.getElementById("demo");
+        element.textContent = "Text has been changed!";
+        }
+
+
+        function changeColor() {
+        document.body.style.backgroundColor = "lightblue";
+        }
+
+        function toggleVisibility() {
+            const element = document.getElementById("message");
+            element.style.display = element.style.display === "none" ? "block" : "none";
+          }
+          
+          function loadData() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("dataContainer").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+          
+    </script>
+</body>
+</html>

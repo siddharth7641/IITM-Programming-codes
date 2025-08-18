@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST", action="{{url_for('index')}}">
+        <input type="text", name="uname", placeholder="username">
+        <br>
+        <br>
+        <input type="text", name="pwd", placeholder="password">
+        <br>
+        <br>
+        <button type="submit">submit</button>
+    </form>
+
+    <H1>File Upload</H1>
+    <form action="{{url_for('file_upload')}}", method="POST", enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+        <button type="submit" value=" upload">Upload</button>
+    </form>
+
+    <H1>convert_csv</H1>
+    <form action="{{url_for('convert_csv')}}", method="POST", enctype="multipart/form-data">
+        <input type="file" name="file" accept=" application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+        <button type="submit" value=" upload">Upload</button>
+    </form>
+
+    <H1>convert_csv_two</H1>
+    <form action="{{url_for('convert_csv_two')}}", method="POST", enctype="multipart/form-data">
+        <input type="file" name="file" accept=" application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+        <button type="submit" value=" upload">Upload</button>
+    </form>
+</body>
+</html>
