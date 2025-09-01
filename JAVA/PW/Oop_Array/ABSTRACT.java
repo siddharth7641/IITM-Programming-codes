@@ -1,7 +1,9 @@
 abstract class structure {
 
     abstract public void sleep();
-    abstract public void awake();
+    public void awake(){
+        System.out.println("Awake for 8 hours.");
+    };
 }
 
 class animals  extends structure {

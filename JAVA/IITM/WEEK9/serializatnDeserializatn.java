@@ -33,7 +33,7 @@ public class serializatnDeserializatn {
     
     /* 
         String filepath = "Employeeser.txt";
-    // Serializaation
+    // Serialization
         Employee emp1 = new Employee("Arun", 5000.0);
         Employee emp2 = new Employee("Lakshay", 45000.0);
     // Write into a file
@@ -83,9 +83,10 @@ public class serializatnDeserializatn {
             System.out.println("Employee object deserialized :\n"+ deserializedMan);
         } catch (Exception e) {
             e.printStackTrace(); 
+        }
     */
 
-        }
+        
     }
 }
 

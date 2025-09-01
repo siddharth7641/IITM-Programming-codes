@@ -6,7 +6,9 @@ interface A{
         System.out.println("in sleep");
 
     }
-
+    default void hello(){
+        System.out.println("in hello");
+    };
     static void awake(){
         System.out.println("I'm awake.");
     }

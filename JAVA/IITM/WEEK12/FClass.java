@@ -1,5 +1,3 @@
-package com.Week12;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -71,7 +69,7 @@ public class FClass{
                         JFrame frame = new ButtonFrame();
                         frame.setVisible(true);
                     }
-                    );
+            );
 
        }
 }

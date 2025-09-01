@@ -5,8 +5,8 @@ import java.util.Optional;
 import java.util.stream.Stream;
 import java.util.Random;
 
-// Optional<T> is a container object introduced in Java 8 that may or may not contain a non-null value. It is used
-// to avoid null checks and help prevent NullPointerException.
+// Optional<T> is a container object introduced in Java 8 that may or may not contain a non-null value.
+// It is used to avoid null checks and help prevent NullPointerException.
 //Optional.empty();
 
 public class optionalConcept {
